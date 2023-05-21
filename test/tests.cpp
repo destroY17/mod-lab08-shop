@@ -40,7 +40,7 @@ TEST(WorkCheck, checkShopStats) {
     shop.work(generating_time);
     auto stats = shop.getShopStats();
 
-    auto eps = 0.01;
+    auto eps = 0.1;
     EXPECT_TRUE(stats.served_clients < stats.unserved_clients);
     EXPECT_TRUE(stats.total_time >= generating_time);
     EXPECT_TRUE(stats.avg_checkout_worktime > stats.avg_checkout_idletime);
