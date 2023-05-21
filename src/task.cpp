@@ -1,6 +1,7 @@
 #include "task.h"
 #include <string>
 #include <sstream>
+#include <cmath>
 
 std::string ShopStats::toString() {
     std::stringstream ss;
