@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <cstdlib>
 
 std::string ShopStats::toString() {
     std::stringstream ss;
